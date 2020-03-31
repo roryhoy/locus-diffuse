@@ -1,14 +1,24 @@
 <html>
   <head>
-    <script src="NexusUI.js"></script>
+    <script src="./NexusUI.js"></script>
   </head>
   <body>
 
-    <div id="dial"></div>
+    <div id="target"></div>
 
     <script>
-      var dial = new Nexus.Dial('#dial')
-    </script>
+      var position = new Nexus.Position('#target',{
+        'size': [200,200],
+        'mode': 'absolute',  // "absolute" or "relative"
+        'x': 0.5,  // initial x value
+        'minX': 0,
+        'maxX': 1,
+        'stepX': 0,
+        'y': 0.5,  // initial y value
+        'minY': 0,
+        'maxY': 1,
+        'stepY': 0
+})    </script>
 
   </body>
 </html>
